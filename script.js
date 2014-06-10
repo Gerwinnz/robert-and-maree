@@ -11,6 +11,7 @@ $(window).addEvent('domready', function()
 	var $window = $(window);
 	var $anchors = $$('.anchor');
 	var $menuItems = $$('.text-item a');
+	var $welcomeSection = $('welcome-section');
 	
 	var t = null;
 	var checker = null;
@@ -54,7 +55,6 @@ $(window).addEvent('domready', function()
 
 			started = true;
 		}
-		
 
 		// At the end of this all, clear the throttled action
 		clearTimeout(t);
@@ -73,6 +73,25 @@ $(window).addEvent('domready', function()
 	{
 	    links: $menuItems,
 	    wheelStops: false
+	});
+
+
+
+
+	//
+	//	Calculate our vertical screen size
+	//	
+	var setHeight = function()
+	{
+		var windowDimensions = $window.getSize();
+		$welcomeSection.setStyle('height', windowDimensions.y);
+	};
+
+	setHeight();
+
+	$window.addEvent('resize', function()
+	{
+		setHeight();
 	});
 
 });
