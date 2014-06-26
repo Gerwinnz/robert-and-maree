@@ -12,6 +12,7 @@ $(window).addEvent('domready', function()
 	var $anchors = $$('.anchor');
 	var $menuItems = $$('.text-item a');
 	var $welcomeSection = $('welcome-section');
+	var $spacer = $('spacer');
 	
 	var t = null;
 	var checker = null;
@@ -85,6 +86,7 @@ $(window).addEvent('domready', function()
 	{
 		var windowDimensions = $window.getSize();
 		$welcomeSection.setStyle('height', windowDimensions.y);
+		$spacer.setStyle('height', windowDimensions.y);
 	};
 
 	setHeight();

@@ -9,6 +9,13 @@ body{
 	background: #f2ecdf url('images/ricepaper_v3.png') 50% 50%;
 	color: #333;
 
+	/* 
+	*
+	*  -  font-family: 'Roboto Slab', serif;
+	*  -  font-family: 'Roboto', sans-serif;
+	*
+	*/
+
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
@@ -17,6 +24,14 @@ body{
     font-family: Arial;
 }
 
+.clear-fix:after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
 .center{
 	position: relative;
@@ -54,6 +69,35 @@ a img{
 	right: 0px;
 
 	z-index: 100;
+}
+
+.nav .menu{
+	position: absolute;
+	top: -50px;
+
+	list-style: none;
+	padding: 0px;
+	margin: 0px auto;
+
+	width: 300px;
+}
+
+.menu li{
+	float: left;
+	display: block;
+	width: 100px;
+	height: 100px;
+
+	line-height: 60px;
+	text-align: center;
+	font-size: 14px;
+
+	border-radius: 50px;
+	background-color: #8c9a76;
+}
+
+.menu li a{
+	color: #fff;
 }
 
 
@@ -160,14 +204,28 @@ a img{
 *
 */
 .what{
-	position: relative;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 	overflow: hidden;
+
+	z-index: 0;
 }
 
+.post-fold{
+	position: relative;
+	z-index: 1;
+
+	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+	border-top: solid 4px #8c9a76;
+	background: #f2ecdf url('images/ricepaper_v3.png') 50% 50%;
+}
 
 .what .content-layer,
 .what .mountains,
-.what .trees{
+.what .trees,
+.what .avatars{
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -184,6 +242,11 @@ a img{
 	background: url('images/trees.png') 50% 100% no-repeat;
 }
 
+.what .avatars{
+	z-index: 2;
+	background: url('images/avatars.png') 50% 100% no-repeat;
+}
+
 .what .content-layer{
 	z-index: 3;
 }
@@ -197,7 +260,7 @@ a img{
 
 .what .text{
 	position: absolute;
-	top: 60px;
+	top: 40px;
 	left: 118px;
 
 	width: 725px;
@@ -220,6 +283,7 @@ a img{
 
 .where .map{
 	height: 910px;
+	border-bottom: solid 4px #8c9a76;
 	background: url('images/map.png') 50% 50% no-repeat;
 }
 
@@ -234,9 +298,18 @@ a img{
 *
 */
 .details{
-	height: 1000px;
+	font-family: 'Roboto Slab', serif;
+	padding: 100px 0px;
 }
 
+.details .col-2{
+	float: left;
+	width: 47%;
+}
+
+.details .col-2:first-of-type{
+	margin-right: 6%;
+}
 
 
 
