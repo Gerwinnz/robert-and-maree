@@ -48,7 +48,7 @@ $(window).addEvent('domready', function()
 					if(scrolled.y > (anchors[i].y + offset))
 					{
 						$menuItems.removeClass('active');
-						anchors[i].menuItem.addClass('active');
+						$anchors[i].menuItem.addClass('active');
 						break;
 					}
 				}

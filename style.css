@@ -39,8 +39,28 @@ body{
 	margin: 0px auto;
 }
 
+.lap{
+	margin: 100px 0px 0px 0px;
+	height: 42px;
+	background: url('images/lap.png');
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
 h3{
 	
+}
+
+div.break{
+	height: 0px;
+	margin: 0px 0px 20px 0px;
+	border-bottom: dotted 2px rgba(0,0,0,.3);
 }
 
 a{ 
@@ -60,7 +80,6 @@ a img{
 .nav{
 	height: 4px;
 	background: #8c9a76;
-	box-shadow: 0px -5px 15px rgba(0,0,0,.1);
 
 	color: #fff;
 	position: fixed;
@@ -196,6 +215,49 @@ a img{
 
 
 
+/*
+*
+*	Simple cols
+*
+*/
+.col-2{
+	float: left;
+	width: 47%;
+	margin-right: 6%;
+}
+
+.col-2:last-of-type{
+	margin-right: 0;
+}
+
+
+
+.col-3{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+.col-3-2{
+	width: 60%;
+}
+
+.col-3:last-of-type{
+	margin-right: 0;
+}
+
+
+
+
+
+.post-fold{
+	position: relative;
+	z-index: 1;
+
+	border-top: dotted 3px #555;
+	background: #f2ecdf url('images/ricepaper_v3.png') 50% 50%;
+}
+
 
 
 /*
@@ -211,15 +273,6 @@ a img{
 	overflow: hidden;
 
 	z-index: 0;
-}
-
-.post-fold{
-	position: relative;
-	z-index: 1;
-
-	box-shadow: 0px 0px 20px rgba(0,0,0,.2);
-	border-top: solid 4px #8c9a76;
-	background: #f2ecdf url('images/ricepaper_v3.png') 50% 50%;
 }
 
 .what .content-layer,
@@ -278,15 +331,14 @@ a img{
 *
 */
 .Where{
-	background: rgba(199,218,186,.7); /*#C7DABA;*/ /* url('images/green_cup.png'); */
+	font-family: 'Roboto Slab', serif;
+	padding: 50px 0px;
+	/*background: rgba(199,218,186,.7);*/ /*#C7DABA;*/ /* url('images/green_cup.png'); */
 }
 
-.where .map{
-	height: 910px;
-	border-bottom: solid 4px #8c9a76;
-	background: url('images/map.png') 50% 50% no-repeat;
+.where h1, .where h2{
+	/*color: #2b4763;*/
 }
-
 
 
 
@@ -299,19 +351,12 @@ a img{
 */
 .details{
 	font-family: 'Roboto Slab', serif;
-	padding: 100px 0px;
+	padding: 50px 0px;
 }
 
-.details .col-2{
-	float: left;
-	width: 47%;
+.details .section{
+	padding-bottom: 30px;
 }
-
-.details .col-2:first-of-type{
-	margin-right: 6%;
-}
-
-
 
 
 
