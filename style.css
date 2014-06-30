@@ -266,12 +266,8 @@ a img{
 *
 */
 .what{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
+	position: relative;
 	overflow: hidden;
-
 	z-index: 0;
 }
 
@@ -358,7 +354,15 @@ a img{
 	padding-bottom: 30px;
 }
 
+.details .section h2{
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+}
 
+.details .section h3{
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+}
 
 /*
 *
@@ -367,8 +371,17 @@ a img{
 */
 .footer{
 	padding: 50px 0px;
-	background-color: #eee;
+	background-color: rgba(0,0,0,.4);
 	border-top: solid 1px #d8d8d8;
+
+	color: #fff;
+	text-align: center;
+}
+
+.footer ul{
+	list-style: none;
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
 }
 
 .footer .left{
