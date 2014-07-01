@@ -307,14 +307,27 @@ a img{
 	max-width: 100%;
 }
 
+.what .text-wrap{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	top: 20px;
+	left: 50%;
+}
+
 .what .text{
 	position: absolute;
-	top: 40px;
-	left: 118px;
-
+	top: 20px;
+	
 	width: 725px;
 	height: 319px;
-	background: url('images/text.png');
+	background-image: url('images/text.png');
+	background-size: cover;
+}
+
+.what .text.small{
+
+	height: 240px;
 }
 
 
