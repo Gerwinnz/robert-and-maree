@@ -113,12 +113,12 @@ $(window).addEvent('domready', function()
 		}
 	};
 
-	setHeight();
+	// setHeight();
 
-	$window.addEvent('resize', function()
-	{
-		setHeight();
-	});
+	// $window.addEvent('resize', function()
+	// {
+	// 	setHeight();
+	// });
 
 });
 

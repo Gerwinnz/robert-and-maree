@@ -6,7 +6,8 @@
 body{
 	padding: 0px;
 	margin: 0px;
-	background: #f2ecdf url('images/ricepaper_v3.png') 50% 50%;
+	/*background: #f2ecdf url('images/ricepaper_v3.png') 50% 50%;*/
+	background-color: #f5f5f5;
 	color: #333;
 
 	/* 
@@ -39,22 +40,17 @@ body{
 	margin: 0px auto;
 }
 
-.lap{
-	margin: 100px 0px 0px 0px;
-	height: 42px;
-	background: url('images/lap.png');
-}
 
 h1{
-
+	font-family: 'Amatic SC', cursive;
 }
 
 h2{
-
+	font-family: 'Amatic SC', cursive;
 }
 
 h3{
-	
+	font-family: 'Amatic SC', cursive;
 }
 
 div.break{
@@ -124,94 +120,6 @@ a img{
 
 
 
-/*
-*
-*	Trees
-*
-*/
-.tree-left{
-	position: fixed;
-	bottom: -10px;
-	left: -80px;
-
-	width: 235px;
-	height: 559px;
-	
-	background: url('images/tree_left.png');
-}
-
-.tree-right{
-	position: fixed;
-	bottom: -10px;
-	right: -90px;
-
-	width: 286px;
-	height: 573px;
-	
-	background: url('images/tree_right.png');
-}
-
-
-
-
-
-
-
-/*
-*
-*	Our menu
-*
-*/
-.header .title{
-	float: left;
-	line-height: 65px;
-	font-size: 30px;
-}
-
-.header .menu{
-	list-style: none;
-	padding: 0px;
-	margin: 16px 0px 0px 0px;
-	
-	height: 32px;
-	float: right;
-}
-
-.header .menu li{
-	float: left;
-}
-
-.header .menu a{
-	color: #333;
-}
-
-.header .menu .text-item{
-	margin: 0px 10px;
-}
-
-.header .menu .icon-item{
-	margin-left: 5px;
-}
-
-.header .menu .text-item a{
-	display: block;
-	height: 32px;
-	line-height: 32px;
-
-	font-size: 16px;
-	padding: 0px 15px;
-}
-
-.header .menu .text-item a.active{
-	border-radius: 4px;
-	background-color: rgba(0,0,0,.05);
-}
-
-.header .menu .icon-item a{
-	font-size: 30px;
-	position: relative;
-}
-
 
 
 
@@ -253,9 +161,6 @@ a img{
 .post-fold{
 	position: relative;
 	z-index: 1;
-
-	border-top: dotted 3px #555;
-	background: #f2ecdf url('images/ricepaper_v3.png') 50% 50%;
 }
 
 
@@ -271,63 +176,31 @@ a img{
 	z-index: 0;
 }
 
-.what .content-layer,
-.what .mountains,
-.what .trees,
-.what .avatars{
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
+.what .main-image{
+
+	margin: 50px auto;
+	max-width: 736px;
 }
 
-.mountains{
-	z-index: 1;
+.what .main-image img{
+	width: 100%;
 }
 
-.what .trees{
-	z-index: 2;
-	background: url('images/trees.png') 50% 100% no-repeat;
+
+.what .main-text{
+	max-width: 800px;
+	margin: 40px auto;
+
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
 }
 
-.what .avatars{
-	z-index: 2;
-	background: url('images/avatars.png') 50% 100% no-repeat;
+.main-text .big{
+	font-size: 12.0rem;
 }
 
-.what .content-layer{
-	z-index: 3;
-}
-
-.what .mountains img{
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	max-width: 100%;
-}
-
-.what .text-wrap{
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	top: 20px;
-	left: 50%;
-}
-
-.what .text{
-	position: absolute;
-	top: 20px;
-	
-	width: 725px;
-	height: 319px;
-	background-image: url('images/text.png');
-	background-size: cover;
-}
-
-.what .text.small{
-
-	height: 240px;
+.main-text .small{
+	font-size: 6rem;
 }
 
 
@@ -342,6 +215,7 @@ a img{
 .Where{
 	font-family: 'Roboto Slab', serif;
 	padding: 50px 0px;
+	border-top: dotted 3px #555;
 	/*background: rgba(199,218,186,.7);*/ /*#C7DABA;*/ /* url('images/green_cup.png'); */
 }
 
@@ -349,6 +223,9 @@ a img{
 	/*color: #2b4763;*/
 }
 
+.where .map-col img{
+	width: 100%;
+}
 
 
 
@@ -361,6 +238,7 @@ a img{
 .details{
 	font-family: 'Roboto Slab', serif;
 	padding: 50px 0px;
+	border-top: dotted 3px #555;
 }
 
 .details .section{
@@ -384,7 +262,7 @@ a img{
 */
 .footer{
 	padding: 50px 0px;
-	background-color: rgba(0,0,0,.4);
+	background-color: #333;
 	border-top: solid 1px #d8d8d8;
 
 	color: #fff;
