@@ -391,6 +391,11 @@ a img{
 	text-align: center;
 }
 
+.footer a{
+	color: #fff;
+	text-decoration: underline;
+}
+
 .footer ul{
 	list-style: none;
 	padding: 10px 0px 0px 0px;
